@@ -1,0 +1,17 @@
+:root {
+	--bg-color: #2a2a2a;
+	--second-bg-color: #202020;
+	--text-color: #fff;
+	--second-color: #ccc;
+	--main-color: #537fe7;
+}
+.span {
+	color: var(--main-color);
+}
+.xia {
+	background-color: cyan;
+}
+.carousel-item {
+	height: 32rem;
+	background-color: #777;
+}
