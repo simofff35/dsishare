@@ -135,7 +135,7 @@ section {
   position: relative;
   height: 100vh;
   width: 100%;
-  background-image: url(../img/nathan-j-2vlVcFFFV3M-unsplash.jpg);
+  background-image: url(../img/background.jpg);
   background-size: cover;
   background-position: center center;
   display: flex;
@@ -652,6 +652,3 @@ img[alt="www.000webhost.com"] {
   display: none !important;
 }
 
-span.gg{
-    
-}
