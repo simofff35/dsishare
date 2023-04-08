@@ -1,3 +1,7 @@
+header {
+  width: 100%;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -28,6 +32,7 @@
 body {
   text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
   box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);
+  width: 100%;
 }
 
 .cover-container {
@@ -86,19 +91,26 @@ header {
 }
 
 .logo {
-    display: flex;
-    align-items: center;
-    color: var(--text-color);
-    font-size: 30px;
+  display: flex;
+  align-items: center;
+  color: var(--text-color);
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.logo-img {
+  height: 35px;
+  margin-right: 10px;
+}
+
+@media (max-width: 370px) {
+  a.logo {
+    font-size: 2px;
     font-weight: 700;
     letter-spacing: 1px;
   }
-  
-  .logo-img {
-    height: 35px;
-    margin-right: 10px;
-  }
-    
+}
 
 span {
   color: var(--main-color);
@@ -135,7 +147,7 @@ section {
   position: relative;
   height: 100vh;
   width: 100%;
-  background-image: url(../img/background.jpg);
+  background-image: url(../img/1background.jpg);
   background-size: cover;
   background-position: center center;
   display: flex;
@@ -143,7 +155,13 @@ section {
   justify-content: flex-start;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 520px), (min-height: 1000px) {
+  .home {
+    background-image: url(../img/image.jpg);
+  }
+}
+
+@media (max-width: 765px), (min-height: 1050px) {
   .home {
     height: 60vh;
   }
@@ -246,6 +264,11 @@ header.sticky {
   background: var(--bg-color);
   border-bottom: 1px solid #ffffff1a;
   padding: 12px 12%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 .about {
@@ -566,6 +589,16 @@ form textarea {
   background: var(--main-color);
 }
 
+@media (max-width: 500px) {
+  .back-to-top {
+    display: none;
+  }
+}
+
+.list li a:hover {
+  color: var(--main-color);
+}
+
 @media (max-width: 1480px) {
   header {
     padding: 12px 2.5%;
@@ -576,7 +609,7 @@ form textarea {
     transition: 0.1s;
   }
   section {
-    padding: 80px 3% 60px;
+    padding: 80px 3% 45px;
   }
   .end {
     padding: 10px 3%;
@@ -640,7 +673,7 @@ form textarea {
   text-align: center;
 }
 .xia {
-  padding-bottom: 0.8rem;
+  padding-bottom: 1.8rem;
   display: flex;
   justify-content: center;
   background-color: var(--second-bg-color);
@@ -651,4 +684,3 @@ form textarea {
 img[alt="www.000webhost.com"] {
   display: none !important;
 }
-
